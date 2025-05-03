@@ -33,7 +33,7 @@ public class LightBoard
       if(lights[i][col])
         count++; 
     }
-    if(count%2==0 && lights[row][col]==0)
+    if(count%2==0 && lights[row][col]==true)
       return false;
     else if(lights[row][col]==false && count%3==0)
       return true;
